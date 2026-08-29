@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Book an Appointment — CarePlus Clinic, Chennai</title>
+<meta name="description" content="Book an appointment at CarePlus Clinic in Anna Nagar, Chennai. Find our address, phone number, email, opening hours and appointment request form.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact CarePlus Clinic">
+<meta property="og:description" content="Book an appointment or get in touch with CarePlus Clinic in Anna Nagar, Chennai.">
+<meta property="og:image" content="images/map-placeholder.svg">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo-mark.svg" alt="" width="40" height="40">
+      <span>CarePlus Clinic<span class="brand-tag">Chennai</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#appointment-form" class="btn btn-primary btn-sm">
+        <span class="btn-label-full">Book Appointment</span>
+        <span class="btn-label-short" aria-hidden="true">Book</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <div class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+      <h1>Contact &amp; book an appointment</h1>
+      <p>Reach out by phone, WhatsApp or email, or fill in the form below to request an appointment.</p>
+    </div>
+  </div>
+
+  <section aria-labelledby="contact-heading">
+    <div class="container contact-grid">
+
+      <div>
+        <span class="eyebrow">Appointment Request</span>
+        <h2 id="contact-heading">Book an appointment</h2>
+        <p>Fill in the form and our team will confirm your appointment shortly. This form is a demo — no information is sent or stored.</p>
+
+        <div class="form-success" id="form-success" role="status">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.5L11 15.5L16 9"/></svg>
+          <span>Thank you! Your appointment request has been received. Our team will contact you shortly.</span>
+        </div>
+
+        <form class="appointment-form" id="appointment-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" autocomplete="name" required>
+              <p class="field-error">Please enter your full name.</p>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="98765 43210" required>
+              <p class="field-error">Please enter a valid phone number.</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <p class="field-error">Please enter a valid email address.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service <span class="required">*</span></label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option value="general-consultation">General Consultation</option>
+              <option value="pediatrics">Pediatrics</option>
+              <option value="dermatology">Dermatology</option>
+              <option value="womens-health">Women's Health</option>
+              <option value="diabetes-bp-care">Diabetes &amp; BP Care</option>
+              <option value="health-checkup">Health Checkup</option>
+            </select>
+            <p class="field-error">Please choose a service.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preferredDate">Preferred Date <span class="required">*</span></label>
+              <input type="date" id="preferredDate" name="preferredDate" required>
+              <p class="field-error">Please choose a valid date.</p>
+            </div>
+            <div class="form-group">
+              <label for="preferredTime">Preferred Time <span class="required">*</span></label>
+              <select id="preferredTime" name="preferredTime" required>
+                <option value="">Choose a time</option>
+                <option value="morning">Morning (8:00 AM – 12:00 PM)</option>
+                <option value="afternoon">Afternoon (12:00 PM – 4:00 PM)</option>
+                <option value="evening">Evening (4:00 PM – 8:00 PM)</option>
+              </select>
+              <p class="field-error">Please choose a preferred time.</p>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your concern (optional)"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Book an Appointment</button>
+          <p class="form-note">Fields marked <span class="required">*</span> are required. This is a frontend demo form only.</p>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-info-card">
+          <h3>Clinic Information</h3>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C12 21 5 14.5 5 9.5C5 5.9 8.1 3 12 3C15.9 3 19 5.9 19 9.5C19 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <div>
+                <strong>CarePlus Clinic</strong>
+                <span>24, Anna Nagar Main Road, Chennai, Tamil Nadu</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5C4 4.4 4.4 4 5 4H8L10 9L7.5 10.5C8.5 13 11 15.5 13.5 16.5L15 14L20 16V19C20 19.6 19.6 20 19 20C11.3 20 4 12.7 4 5Z"/></svg>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M4 6.5L12 12.5L20 6.5"/></svg>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@careplusclinic.com">hello@careplusclinic.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7V12L15.5 14"/></svg>
+              <div>
+                <strong>Opening Hours</strong>
+                <span>Mon – Sat: 8:00 AM – 8:00 PM</span>
+                <span>Sunday: Emergency consultation by appointment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-row mt-lg">
+            <a href="tel:+91XXXXXXXXXX" class="btn btn-outline btn-sm">Call Clinic</a>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" class="btn btn-outline btn-sm">WhatsApp</a>
+            <a href="https://maps.google.com/?q=Anna+Nagar+Chennai" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Get Directions</a>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          <img src="images/map-placeholder.svg" alt="Stylized map showing the approximate location of CarePlus Clinic in Anna Nagar, Chennai" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-brand">
+          <img src="images/logo-mark.svg" alt="" width="34" height="34">
+          CarePlus Clinic
+        </a>
+        <p class="footer-tagline">Quality healthcare, closer to you.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="CarePlus Clinic on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M14 9H16V6H14C12.3 6 11 7.3 11 9V11H9V14H11V21H14V14H16L17 11H14V9Z"/></svg></a>
+          <a href="#" aria-label="CarePlus Clinic on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1"/></svg></a>
+          <a href="#" aria-label="CarePlus Clinic on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="M10.5 9.5L15 12L10.5 14.5V9.5Z" fill="#fff" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="doctors.html">Doctors</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Mon – Sat: 8:00 AM – 8:00 PM</li>
+          <li>Sunday: Emergency only</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>24, Anna Nagar Main Road, Chennai</li>
+          <li><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></li>
+          <li><a href="mailto:hello@careplusclinic.com">hello@careplusclinic.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> <strong>CarePlus Clinic</strong>. All rights reserved.</span>
+      <span>Demo website created by EffiSolve · Names, doctors and details are fictional.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12L12 5L19 12"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Pre-select service from a query parameter, e.g. contact.html?service=pediatrics
+  (function preselectService() {
+    var params = new URLSearchParams(window.location.search);
+    var serviceParam = params.get('service');
+    var select = document.getElementById('service');
+    if (serviceParam && select) {
+      var optionExists = Array.from(select.options).some(function (opt) { return opt.value === serviceParam; });
+      if (optionExists) select.value = serviceParam;
+    }
+  })();
+</script>
+</body>
+</html>
