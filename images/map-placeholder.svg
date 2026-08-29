@@ -1,0 +1,18 @@
+<svg viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mapTitle">
+  <title id="mapTitle">Stylized map showing the approximate location of CarePlus Clinic in Anna Nagar, Chennai</title>
+  <rect width="600" height="360" fill="#DBEEEC"/>
+  <path d="M0 90H600" stroke="#C6E1DD" stroke-width="10"/>
+  <path d="M0 240H600" stroke="#C6E1DD" stroke-width="6"/>
+  <path d="M140 0V360" stroke="#C6E1DD" stroke-width="6"/>
+  <path d="M420 0V360" stroke="#C6E1DD" stroke-width="10"/>
+  <rect x="180" y="120" width="90" height="70" rx="6" fill="#C6E1DD"/>
+  <rect x="330" y="140" width="60" height="60" rx="6" fill="#C6E1DD"/>
+  <rect x="60" y="150" width="50" height="50" rx="6" fill="#C6E1DD"/>
+
+  <!-- pin -->
+  <path d="M300 130C275 130 258 148 258 172C258 205 300 245 300 245C300 245 342 205 342 172C342 148 325 130 300 130Z" fill="#1F6F6B"/>
+  <circle cx="300" cy="172" r="15" fill="#FFFFFF"/>
+  <circle cx="300" cy="172" r="6" fill="#E2A63B"/>
+
+  <text x="300" y="270" font-family="Inter, sans-serif" font-size="15" fill="#164F4C" text-anchor="middle" font-weight="600">Anna Nagar, Chennai</text>
+</svg>
